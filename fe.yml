@@ -16,8 +16,11 @@ data:
     }
     http {
       server {
-        listen 30008 default_server;
-        listen [::]:30008 default_server;
+        #listen 30008 default_server;
+        #listen [::]:30008 default_server;
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
 
         # Set nginx to serve files from the shared volume!
         root /var/www/html;
